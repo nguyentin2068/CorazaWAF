@@ -1,0 +1,204 @@
+- name: Copy ModSecurity compress folder
+  become: true
+  ansible.builtin.copy:
+    src: "{{ modsec }}"
+    dest: "{{ unarchive_path }}"
+    mode: "0644"
+
+- name: Untar installer
+  become: true
+  ansible.builtin.unarchive:
+    src: "{{ unarchive_path }}/{{ modsec }}"
+    dest: "{{ unarchive_path }}"
+    remote_src: yes
+
+- name: Run script update needed path I
+  become: true
+  become_method: sudo
+  command: yum groupinstall 'Development Tools' -y
+
+- name: Run script update needed path II
+  become: true
+  become_method: sudo
+  command: yum install httpd httpd-devel pcre pcre-devel libxml2-devel -y
+
+#SSL error at libcurl
+- name: Run script update needed path III
+  become: true
+  become_method: sudo
+  command: yum install gcc-c++ flex bison yajl yajl-devel GeoIP-devel doxygen zlib-devel -y
+
+- name: Run script update needed path IV
+  become: true
+  become_method: sudo
+  command: yum install lmdb lmdb-devel libxml2 libxml2-devel ssdeep ssdeep-devel lua lua-devel -y
+
+- name: Untar modsec
+  ansible.builtin.unarchive:
+    src: "{{ unarchive_path }}/modsecurity-2.9.7.tar.gz"
+    dest: "{{ unarchive_path }}"
+    remote_src: yes
+
+- name: Run script build.sh libModSecurity
+  become: true
+  become_method: sudo
+  command: sh build.sh
+  args:
+    chdir: "{{ unarchive_path }}/modsecurity-2.9.7/"
+
+- name: Run script ./configure libModSecurity
+  become: true
+  become_method: sudo
+  command: bash ./configure
+  args:
+    chdir: "{{ unarchive_path }}/modsecurity-2.9.7/"
+
+- name: Run script make libModSecurity
+  become: true
+  become_method: sudo
+  command: make
+  args:
+    chdir: "{{ unarchive_path }}/modsecurity-2.9.7/"
+
+- name: Run script make install libModsecurity
+  become: true
+  become_method: sudo
+  command: make install
+  args:
+    chdir: "{{ unarchive_path }}/modsecurity-2.9.7/"
+
+- name: Create a folder modsec in /ect/httpd
+  become: true
+  ansible.builtin.file:
+    path: /etc/httpd/modsec 
+    state: directory
+
+- name: Create a folder modsec in /var/log
+  become: true
+  ansible.builtin.file:
+    path: /var/log/modsec 
+    state: directory
+
+- name: Copy a file main.conf to /etc/httpd/modsec/
+  become: true
+  ansible.builtin.copy:
+    src: "{{ unarchive_path }}/main.conf"
+    dest: "/etc/httpd/modsec/"
+    mode: "0644"
+    remote_src: yes
+
+- name: Copy a file modsecurity.conf to /etc/httpd/modsec/
+  become: true
+  ansible.builtin.copy:
+    src: "{{ unarchive_path }}/modsecurity.conf"
+    dest: "/etc/httpd/modsec/"
+    mode: "0644"
+    remote_src: yes
+
+- name: Copy a file unicode.mapping to /etc/httpd/modsec/
+  become: true
+  ansible.builtin.copy:
+    src: "{{ unarchive_path }}/unicode.mapping"
+    dest: "/etc/httpd/modsec/"
+    mode: "0644"
+    remote_src: yes
+
+- name: Copy a file modsecurity-crs.tar.gz to /usr/local/
+  become: true
+  ansible.builtin.copy:
+    src: "{{ unarchive_path }}/modsecurity-crs.tar.gz"
+    dest: "/usr/local/"
+    mode: "0644"
+    remote_src: yes
+
+- name: Untar modsecurity-crs.tar.gz
+  become: true
+  ansible.builtin.unarchive:
+    src: "/usr/local/modsecurity-crs.tar.gz"
+    dest: "/usr/local/"
+    mode: "0644"
+    remote_src: yes
+
+- name: Get apache connector
+  become: true
+  become_method: sudo
+  command: git clone --depth 1 https://github.com/SpiderLabs/ModSecurity-apache.git
+  args:
+    chdir: "{{ unarchive_path }}/modsecurity-2.9.7/"
+
+- name: Run ./autogen script connector module
+  become: true
+  become_method: sudo
+  command: ./autogen.sh
+  args:
+    chdir: "{{ unarchive_path }}/modsecurity-2.9.7/ModSecurity-apache/"
+#note
+- name: Run script ./configure connector module
+  become: true
+  become_method: sudo
+  command: ./configure --with-libmodsecurity=/usr/local/modsecurity/
+  args:
+    chdir: "{{ unarchive_path }}/modsecurity-2.9.7/ModSecurity-apache/"
+
+- name: Run script make connector module
+  become: true
+  become_method: sudo
+  command: make
+  args:
+    chdir: "{{ unarchive_path }}/modsecurity-2.9.7/ModSecurity-apache/"
+
+- name: Run script make install connector module
+  become: true
+  become_method: sudo
+  command: make install
+  args:
+    chdir: "{{ unarchive_path }}/modsecurity-2.9.7/ModSecurity-apache/"
+
+#note
+- name: Copy module modsec to folder httpd module
+  become: true
+  ansible.builtin.copy:
+    src: "{{ unarchive_path }}/ModSecurity/src/.libs/mod_security3.so"
+    dest: "{{apache_modules_path}}"
+    mode: "0644"
+    remote_src: yes
+
+- name: Copy a file logrotate for modsec
+  become: true
+  ansible.builtin.copy:
+    src: "{{ unarchive_path }}/modsec"
+    dest: "/etc/logrotate.d/"
+    mode: "0644"
+    remote_src: yes
+
+- name: Add Logrotate Cron Job
+  become: true
+  ansible.builtin.copy:
+    src: "{{ unarchive_path }}/logrotatemodsec"
+    dest: "/etc/cron.d/"
+    mode: "0644"
+    remote_src: yes
+
+- name: Add ModSecurity to Apache
+  ansible.builtin.lineinfile:
+    path: /etc/httpd/conf/httpd.conf
+    insertafter: '^\s*ServerRoot'
+    line: |
+      modsecurity 'On'
+      modsecurity_rules_file /etc/httpd/modsecurity/main.conf
+
+- name: Add file configure load modsec module
+  ansible.builtin.copy:
+    src: "{{ unarchive_path }}/50-mod-modsecurity.conf"
+    dest: "/etc/httpd/conf.modules.d/"
+    mode: "0644"
+    remote_src: yes
+
+- name: Check nginx configuration
+  command: httpd -t
+  register: httpd_test_result
+  changed_when: false
+
+- name: Reload nginx if configuration is valid
+  command: httpd -k graceful
+  when: httpd_test_result.stderr.find("Syntax OK") != -1

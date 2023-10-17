@@ -1,0 +1,189 @@
+- name: Copy CIS Audit compress folder
+  become: true
+  ansible.builtin.copy:
+    src: "{{ modsec }}"
+    dest: "{{ unarchive_path }}"
+    mode: "0644"
+
+- name: Untar installer
+  ansible.builtin.unarchive:
+    src: "{{ unarchive_path }}/{{ modsec }}"
+    dest: "{{ unarchive_path }}"
+    remote_src: yes
+
+- name: Run script update needed path
+  become: true
+  become_method: sudo
+  command: yum install httpd httpd-devel pcre pcre-devel libxml2-devel
+
+- name: Untar modsec
+  ansible.builtin.unarchive:
+    src: "{{ unarchive_path }}/modsecurity-2.9.7.tar.gz"
+    dest: "{{ unarchive_path }}"
+    remote_src: yes
+
+- name: Run script build.sh
+  become: true
+  become_method: sudo
+  command: sh build.sh
+  args:
+    chdir: "{{ unarchive_path }}/ModSecurity/"
+
+- name: Run script ./configure
+  become: true
+  become_method: sudo
+  command: ./configure --enable-standalone-module --disable-mlogc
+  args:
+    chdir: "{{ unarchive_path }}/ModSecurity/"
+
+- name: Run script make
+  become: true
+  become_method: sudo
+  command: make
+  args:
+    chdir: "{{ unarchive_path }}/ModSecurity/"
+
+- name: Run script make install
+  become: true
+  become_method: sudo
+  command: make install
+  args:
+    chdir: "{{ unarchive_path }}/ModSecurity/"
+#./configure --with-libmodsecurity=/usr/local/modsecurity/
+- name: Get nginx connector
+  become: true
+  become_method: sudo
+  command: git clone --depth 1 https://github.com/SpiderLabs/ModSecurity-nginx.git
+  args:
+    chdir: "{{ unarchive_path }}/ModSecurity/"
+
+- name: Get nginx version
+  command: nginx -v
+  register: nginx_version_output
+  changed_when: false
+
+- name: Extract Nginx Version
+  set_fact:
+     nginx_version: "{{ nginx_version_output.stderr | regex_search('([0-9.]+)') }}"
+  when: nginx_version_output.stderr is search('([0-9.]+)')
+
+- name: Run script make install
+  become: true
+  become_method: sudo
+  command: wget http://nginx.org/download/nginx-{{ nginx_version }}.tar.gz
+  args:
+    chdir: "{{ unarchive_path }}/ModSecurity/"
+
+- name: Untar nginx
+  ansible.builtin.unarchive:
+    src: "{{ unarchive_path }}/ModSecurity/nginx-{{ nginx_version }}.tar.gz"
+    dest: "{{ unarchive_path }}/ModSecurity/"
+    remote_src: yes
+
+- name: Run script configure module
+  become: true
+  become_method: sudo
+  command: ./configure --with-compat --add-dynamic-module=../ModSecurity-nginx
+  args:
+    chdir: "{{ unarchive_path }}/ModSecurity/nginx-{{ nginx_version }}"
+
+- name: Run script make modules
+  become: true
+  become_method: sudo
+  command: make modules
+  args:
+    chdir: "{{ unarchive_path }}/ModSecurity/nginx-{{ nginx_version }}"
+
+- name: Create a folder modsec in /ect/nginx
+  ansible.builtin.file:
+    path: /etc/nginx/modsec 
+    state: directory
+    mode: "0644"
+    remote_src: yes
+
+- name: Create a folder modsec in /var/log
+  ansible.builtin.file:
+    path: /var/log/modsec 
+    state: directory
+    mode: "0644"
+    remote_src: yes
+
+- name: Copy a file main.conf to /etc/nginx/modsec/
+  ansible.builtin.copy:
+    src: "{{ unarchive_path }}/main.conf"
+    dest: "/etc/nginx/modsec/"
+    mode: "0644"
+    remote_src: yes
+
+- name: Copy a file modsecurity.conf to /etc/nginx/modsec/
+  ansible.builtin.copy:
+    src: "{{ unarchive_path }}/modsecurity.conf"
+    dest: "/etc/nginx/modsec/"
+    mode: "0644"
+    remote_src: yes
+
+- name: Copy a file unicode.mapping to /etc/nginx/modsec/
+  ansible.builtin.copy:
+    src: "{{ unarchive_path }}/unicode.mapping"
+    dest: "/etc/nginx/modsec/"
+    mode: "0644"
+    remote_src: yes
+
+- name: Copy a file modsecurity-crs.tar.gz to /usr/local/
+  ansible.builtin.copy:
+    src: "{{ unarchive_path }}/modsecurity-crs.tar.gz"
+    dest: "/usr/local/"
+    mode: "0644"
+    remote_src: yes
+
+- name: Untar modsecurity-crs.tar.gz
+  ansible.builtin.unarchive:
+    src: "{{ unarchive_path }}/modsecurity-crs.tar.gz"
+    dest: "/usr/local/"
+    mode: "0644"
+    remote_src: yes
+
+- name: Copy module modsec to folder nginx module
+  ansible.builtin.copy:
+    src: "{{ unarchive_path }}/ModSecurity/nginx-{{ nginx_version }}/objs/ngx_http_modsecurity_module.so"
+    dest: "{{nginx_modules_path}}"
+    mode: "0644"
+    remote_src: yes
+
+- name: Copy a file logrotate for modsec
+  ansible.builtin.copy:
+    src: "{{ unarchive_path }}/modsec"
+    dest: "/etc/logrotate.d/"
+    mode: "0644"
+    remote_src: yes
+
+- name: Add Logrotate Cron Job
+  ansible.builtin.copy:
+    src: "{{ unarchive_path }}/logrotatemodsec"
+    dest: "/etc/cron.d/"
+    mode: "0644"
+    remote_src: yes
+
+- name: Add ModSecurity to nginx
+  ansible.builtin.lineinfile:
+    path: /etc/nginx/nginx.conf
+    insertafter: '^\s*http {'
+    line: |
+      modsecurity on;
+      modsecurity_rules_file /etc/nginx/modsec/main.conf;
+
+- name: Add file configure load modsec module
+  ansible.builtin.copy:
+    src: "{{ unarchive_path }}/50-mod-modsecurity.conf"
+    dest: "/etc/nginx/modules-enabled/"
+    mode: "0644"
+    remote_src: yes
+
+- name: Check nginx configuration
+  command: nginx -t
+  register: nginx_test_result
+  changed_when: false
+
+- name: Reload nginx if configuration is valid
+  command: service nginx reload
+  when: nginx_test_result.stderr.find("syntax is ok") != -1

@@ -1,0 +1,5 @@
+- hosts: ubuntu
+  become: True
+  gather_facts: true
+  roles:
+    - ubuntu-nginx

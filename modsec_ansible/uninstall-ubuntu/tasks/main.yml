@@ -1,0 +1,76 @@
+- name: Remove Modsecurity.zip
+  become: true
+  file:
+    path: "{{ unzip_path }}"
+    state: absent
+
+- name: Remove Modsecurity folder
+  become: true
+  file:
+    path: "{{ unzip_path }}/ModSecurity/"
+    state: absent
+
+- name: Remove folder modsec in /ect/nginx
+  become: true
+  file:
+    path: /etc/nginx/modsec 
+    state: absent
+
+- name: Remove folder modsec in /var/log
+  become: true
+  file:
+    path: /var/log/modsec 
+    state: absent
+
+- name: Remove file modsecurity-crs.zip to /usr/local/
+  become: true
+  file:
+    src: "/usr/local/modsecurity-crs.zip"
+    state: absent
+
+- name: Remove folder modsecurity-crs
+  become: true
+  file:
+    src: "/usr/local/modsecurity-crs"
+    state: absent
+
+- name: Copy module modsec to folder nginx module
+  become: true
+  file:
+    path: "{{nginx_modules_path}}/ngx_http_modsecurity_module.so"
+    state: absent
+
+- name: Remove file logrotate for modsec
+  become: true
+  file:
+    path: "/etc/logrotate.d/modsec"
+    state: absent
+
+- name: Remove Logrotatemodsec
+  become: true
+  file:
+    src: "/etc/crond.d/logrotatemodsec"
+    state: absent
+
+- name: Add ModSecurity to nginx
+  ansible.builtin.lineinfile:
+    path: /etc/nginx/nginx.conf
+    insertafter: '^\s*http {'
+    line: |
+      modsecurity on;
+      modsecurity_rules_file /etc/nginx/modsec/main.conf;
+
+- name: Add file configure load modsec module
+  become: true
+  file:
+    src: "/etc/nginx/modules-enabled/50-mod-modsecurity.conf"
+    state: absent
+
+- name: Check nginx configuration
+  command: nginx -t
+  register: nginx_test_result
+  changed_when: false
+
+- name: Reload nginx if configuration is valid
+  command: service nginx reload
+  when: nginx_test_result.stdout.find("OK") != -1

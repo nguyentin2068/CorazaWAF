@@ -1,0 +1,4 @@
+---
+modsec: "modsec-ubuntu.tar.gz"
+unarchive_path: /opt/modsec-ubuntu
+nginx_modules_path: /usr/share/nginx/modules/

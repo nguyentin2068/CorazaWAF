@@ -1,3 +1,2 @@
-modsec: "modsec-ubuntu.tar.gz"
-unarchive_path: /opt/modsec-ubuntu
-nginx_modules_path: /usr/local/apache/modules/
+modsec: "modsec-apache.tar.gz"
+unarchive_path: /opt/modsec-apache

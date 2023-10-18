@@ -19,7 +19,7 @@
 - name: Run script update needed path II
   become: true
   become_method: sudo
-  command: yum install gcc-c++ flex bison yajl yajl-devel curl-devel curl GeoIP-devel doxygen zlib-devel -y
+  command: yum install gcc-c++ flex bison yajl yajl-devel GeoIP-devel doxygen zlib-devel -y
 
 - name: Run script update needed path III
   become: true

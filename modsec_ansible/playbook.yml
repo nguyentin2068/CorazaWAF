@@ -1,5 +1,5 @@
-- hosts: ubuntu
+- hosts: centos
   become: True
   gather_facts: true
   roles:
-    - ubuntu-nginx
+    - centos-nginx

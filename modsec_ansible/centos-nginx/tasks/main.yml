@@ -26,6 +26,25 @@
   become_method: sudo
   command: yum install lmdb lmdb-devel libxml2 libxml2-devel ssdeep ssdeep-devel lua lua-devel -y
 
+- name: Get libModSecurity
+  become: true
+  become_method: sudo
+  command: git clone --depth 1 -b v3/master --single-branch https://github.com/SpiderLabs/ModSecurity
+
+- name: Get need module libModSecurity
+  become: true
+  become_method: sudo
+  command: git submodule init
+  args:
+    chdir: "{{ unarchive_path }}/ModSecurity/"
+
+- name: Get need module libModSecurity
+  become: true
+  become_method: sudo
+  command: git submodule update
+  args:
+    chdir: "{{ unarchive_path }}/ModSecurity/"
+
 - name: Run script build.sh
   become: true
   become_method: sudo

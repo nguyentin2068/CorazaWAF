@@ -26,6 +26,11 @@
   become_method: sudo
   command: yum install lmdb lmdb-devel libxml2 libxml2-devel ssdeep ssdeep-devel lua lua-devel -y
 
+- name: Run script update needed path IV
+  become: true
+  become_method: sudo
+  command: yum install httpd httpd-devel pcre pcre-devel libxml2-devel -y
+
 - name: Run script build.sh
   become: true
   become_method: sudo

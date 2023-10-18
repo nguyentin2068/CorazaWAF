@@ -20,7 +20,13 @@
 - name: Create a folder modsecurity in /var/log
   become: true
   ansible.builtin.file:
-    path: /var/log/modsecurity
+    path: /var/log/modsec/
+    state: directory
+
+- name: Create a folder modsecurity in /etc/httpd/
+  become: true
+  ansible.builtin.file:
+    path: /etc/httpd/modsecurity/
     state: directory
 
 - name: Copy a file main.conf to /etc/httpd/modsecurity/
@@ -74,6 +80,17 @@
     state: absent
   when: file_status.stat.exists
 
+- name: Check if the file mod_security.conf
+  stat:
+    path: "/etc/httpd/conf.d/mod_security.conf"
+  register: file_status
+
+- name: Remove the file if it exists
+  file:
+    path: "/etc/httpd/conf.d/mod_security.conf"
+    state: absent
+  when: file_status.stat.exists
+
 #note
 - name: Add file configure load modsec module
   ansible.builtin.copy:
@@ -97,6 +114,28 @@
     dest: "/etc/cron.d/"
     mode: "0644"
     remote_src: yes
+
+- name: Check if the file modsec_audit.log
+  stat:
+    path: "/var/log/modsec/modsec_audit.log"
+  register: file_status
+
+- name: Remove the file if it exists
+  file:
+    path: "/var/log/modsec/modsec_audit.log"
+    state: absent
+  when: file_status.stat.exists
+
+- name: Check if the file modsec_debug.log
+  stat:
+    path: "/var/log/modsec/modsec_debug.log"
+  register: file_status
+
+- name: Remove the file if it exists
+  file:
+    path: "/var/log/modsec/modsec_debug.log"
+    state: absent
+  when: file_status.stat.exists
 
 - name: Check apache configuration
   command: httpd -t

@@ -2,25 +2,29 @@
   become: true
   ansible.builtin.copy:
     src: "{{ modsec }}"
-    dest: "{{ unarchive_path }}"
+    dest: "/opt/"
     mode: "0644"
 
 - name: Untar installer
   ansible.builtin.unarchive:
-    src: "{{ unarchive_path }}/{{ modsec }}"
-    dest: "{{ unarchive_path }}"
+    src: "/opt/{{ modsec }}"
+    dest: "/opt/"
     remote_src: yes
 
-- name: Run script update needed path
+- name: Run script update needed path I
   become: true
   become_method: sudo
-  command: yum install httpd httpd-devel pcre pcre-devel libxml2-devel
+  command: yum groupinstall 'Development Tools' -y
 
-- name: Untar modsec
-  ansible.builtin.unarchive:
-    src: "{{ unarchive_path }}/modsecurity-2.9.7.tar.gz"
-    dest: "{{ unarchive_path }}"
-    remote_src: yes
+- name: Run script update needed path II
+  become: true
+  become_method: sudo
+  command: yum install gcc-c++ flex bison yajl yajl-devel curl-devel curl GeoIP-devel doxygen zlib-devel -y
+
+- name: Run script update needed path III
+  become: true
+  become_method: sudo
+  command: yum install lmdb lmdb-devel libxml2 libxml2-devel ssdeep ssdeep-devel lua lua-devel -y
 
 - name: Run script build.sh
   become: true
@@ -32,7 +36,7 @@
 - name: Run script ./configure
   become: true
   become_method: sudo
-  command: ./configure --enable-standalone-module --disable-mlogc
+  command: bash ./configure
   args:
     chdir: "{{ unarchive_path }}/ModSecurity/"
 
@@ -94,38 +98,36 @@
   args:
     chdir: "{{ unarchive_path }}/ModSecurity/nginx-{{ nginx_version }}"
 
-- name: Create a folder modsec in /ect/nginx
+- name: Create a folder modsecurity in /ect/nginx
   ansible.builtin.file:
-    path: /etc/nginx/modsec 
+    path: /etc/nginx/modsecurity/ 
     state: directory
     mode: "0644"
-    remote_src: yes
 
 - name: Create a folder modsec in /var/log
   ansible.builtin.file:
     path: /var/log/modsec 
     state: directory
     mode: "0644"
-    remote_src: yes
 
-- name: Copy a file main.conf to /etc/nginx/modsec/
+- name: Copy a file main.conf to /etc/nginx/modsecurity/
   ansible.builtin.copy:
     src: "{{ unarchive_path }}/main.conf"
-    dest: "/etc/nginx/modsec/"
+    dest: "/etc/nginx/modsecurity/"
     mode: "0644"
     remote_src: yes
 
-- name: Copy a file modsecurity.conf to /etc/nginx/modsec/
+- name: Copy a file modsecurity.conf to /etc/nginx/modsecurity/
   ansible.builtin.copy:
     src: "{{ unarchive_path }}/modsecurity.conf"
-    dest: "/etc/nginx/modsec/"
+    dest: "/etc/nginx/modsecurity/"
     mode: "0644"
     remote_src: yes
 
-- name: Copy a file unicode.mapping to /etc/nginx/modsec/
+- name: Copy a file unicode.mapping to /etc/nginx/modsecurity/
   ansible.builtin.copy:
     src: "{{ unarchive_path }}/unicode.mapping"
-    dest: "/etc/nginx/modsec/"
+    dest: "/etc/nginx/modsecurity/"
     mode: "0644"
     remote_src: yes
 

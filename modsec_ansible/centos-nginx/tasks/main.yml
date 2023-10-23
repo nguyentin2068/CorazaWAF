@@ -171,20 +171,20 @@
     mode: "0644"
     remote_src: yes
 
-- name: Add ModSecurity to nginx
-  ansible.builtin.lineinfile:
-    path: /etc/nginx/nginx.conf
-    insertafter: '^\s*http {'
-    line: |
-      modsecurity on;
-      modsecurity_rules_file /etc/nginx/modsec/main.conf;
-
 - name: Add file configure load modsec module
   ansible.builtin.copy:
     src: "{{ unarchive_path }}/50-mod-modsecurity.conf"
     dest: "/etc/nginx/modules-enabled/"
     mode: "0644"
     remote_src: yes
+
+- name: Add ModSecurity to nginx
+  ansible.builtin.lineinfile:
+    path: /etc/nginx/nginx.conf
+    insertafter: '^\s*http {'
+    line: |
+      modsecurity on;
+      modsecurity_rules_file /etc/nginx/modsecurity/main.conf;
 
 - name: Check nginx configuration
   command: nginx -t

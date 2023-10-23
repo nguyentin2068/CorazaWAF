@@ -137,11 +137,18 @@
     state: absent
   when: file_status.stat.exists
 
+- name: Creates rotate modsec_log an entry like "*/10 * * * * root /usr/sbin/logrotate /etc/logrotate.d/modsec > /dev/null 2>&1"
+  become: true
+  ansible.builtin.cron:
+    name: "rotate modseclog"
+    minute: "*/10"
+    job: "/usr/sbin/logrotate /etc/logrotate.d/modsec > /dev/null 2>&1"
+
 - name: Check apache configuration
   command: httpd -t
   register: httpd_test_result
   changed_when: false
 
 - name: Reload apache if configuration is valid
-  command: httpd -k graceful
+  command: httpd -k restart
   when: httpd_test_result.stderr.find("Syntax OK") != -1

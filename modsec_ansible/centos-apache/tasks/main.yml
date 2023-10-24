@@ -150,5 +150,7 @@
   changed_when: false
 
 - name: Reload apache if configuration is valid
+  become: true
+  become_method: sudo
   command: httpd -k restart
   when: httpd_test_result.stderr.find("Syntax OK") != -1

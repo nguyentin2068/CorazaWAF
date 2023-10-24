@@ -1,1 +1,1 @@
-newblacklist: blacklist_ip.txt
+newblacklist: blacklist_ip.txt #path

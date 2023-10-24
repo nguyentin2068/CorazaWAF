@@ -1,18 +1,18 @@
-- name: Check if the file modsec_debug.log
+- name: Check status blacklist_IP file
   stat:
     path: "/usr/local/modsecurity-crs/blacklist_ip.txt"
   register: file_status
 
-- name: Remove the file if it exists
+- name: Remove the old version
   become: true
   file:
     path: "/usr/local/modsecurity-crs/blacklist_ip.txt"
     state: absent
   when: file_status.stat.exists
 
-- name: Add file configure load modsec module
+- name: Update new version
+  become: true
   ansible.builtin.copy:
     src: "{{ newblacklist }}"
     dest: "/usr/local/modsecurity-crs/"
     mode: "0644"
-    remote_src: yes

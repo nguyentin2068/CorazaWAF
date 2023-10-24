@@ -1,0 +1,1 @@
+ansible-playbook -i inventory.conf playbook.yml --limit linux

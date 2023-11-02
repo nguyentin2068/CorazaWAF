@@ -1,0 +1,46 @@
+---
+- name: Get Static Hostname
+  command: hostnamectl --static
+  register: static_hostname
+  become: true
+
+- name: Check Folder "splunkforwarder" Existence
+  stat:
+    path: /opt/splunkforwarder
+  register: splunkforwarder_exists
+  become: true
+
+- name: Check Folder "carbonblack" Existence
+  stat:
+    path: /opt/carbonblack
+  register: carbonblack_exists
+  become: true
+
+- name: Check Service Status
+  ansible.builtin.service_facts:
+  register: service_info
+
+- debug:
+    msg: "{{ansible_facts.services['SplunkForwarder.service'].state}}"
+  register: splunkforwarder_status
+
+- debug:
+    msg: "{{ansible_facts.services['cbdaemon.service'].state}}"
+  register: carbonblack_status
+
+- name: Write Report
+  template:
+    src: report.j2
+    dest: "{{ client_folder_report}}"
+  become: true
+
+- name: Get report to Host
+  ansible.builtin.fetch:
+    src: "{{ client_folder_report}}"
+    dest: "{{ host_folder_getreport}}"
+    flat: true
+
+- name: Clean after check "Remove CIS Audit folder"
+  file:
+    path: "{{ client_folder_report}}"
+    state: absent

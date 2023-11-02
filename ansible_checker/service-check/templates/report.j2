@@ -1,0 +1,7 @@
+Server Report
+==============
+Static Hostname: {{ static_hostname.stdout }}
+Splunk Existence: {% if splunkforwarder_exists.stat.exists %} Exists {% else %} Does not exist {% endif %}
+Splunk Status: {{ splunkforwarder_status.msg }}
+Carbonblack Existence: {% if carbonblack_exists.stat.exists %} Exists {% else %} Does not exist {% endif %}
+Carbonblack Status: {{ carbonblack_status.msg }}

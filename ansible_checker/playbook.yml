@@ -1,0 +1,5 @@
+- hosts: host
+  become: True
+  gather_facts: true
+  roles:
+    - service-check

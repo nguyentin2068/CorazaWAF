@@ -1,0 +1,43 @@
+- name: Check if D drive exists
+  win_command: Get-Volume -DriveLetter D
+  ignore_errors: true
+  register: d_drive_result
+
+- name: Create folder if it doesn't exist
+  become_method: runas
+  win_command: New-Item -Path "D:\Windows-2019-CIS-Audit" -ItemType Directory
+  when: d_drive_result.rc != 0
+
+- name: Copy CIS_Audit.zip
+  ansible.builtin.copy:
+    src: "{{ cis_checker }}" 
+    dest: "{{ tmpdir_windows }}\\{{ cis_checker }}"
+
+- name: Unzip CIS_Audit
+  become_method: runas
+  win_shell: |
+    Expand-Archive -Path "{{ tmpdir_windows }}\\{{ cis_checker }}" -DestinationPath "{{ tmpdir_windows }}"
+  vars:
+    ansible_shell_type: powershell
+    ansible_shell_executable: powershell.exe
+
+- name: Run script checker
+  become_method: runas
+  win_shell: |
+    .\run_audit.ps1 -outfile "{{tmpdir_windows}}\\report.json"
+  args:
+    chdir: "{{ tmpdir_windows }}"
+    ansible_shell_type: powershell
+    ansible_shell_executable: powershell.exe
+
+- name: Get report file to Host
+  fetch:
+    src: "{{ tmpdir_windows }}\\report.json"
+    dest: "{{ host_folder_getreport }}"
+    flat: yes
+
+- name: Clean after checked
+  become_method: runas
+  win_shell:
+    Remove-Item -Path "{{ tmpdir_windows }}" -Recurse -Force |
+    Remove-Item -Path "{{ cis_checker }}" -Recurse -Force

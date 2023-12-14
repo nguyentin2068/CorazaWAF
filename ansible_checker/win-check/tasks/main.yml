@@ -1,0 +1,36 @@
+---
+- name: Get Windows Hostname
+  become: true
+  win_shell: hostname
+  register: static_hostname
+
+- name: Get CBR status
+  win_service:
+    name: "CarbonBlack"
+  register: carbonblack_status
+- debug:
+    var: carbonblack_status.state
+
+- name: Get SplunkForwarder status
+  win_service:
+    name: SplunkForwarder
+  register: splunkforwarder_status
+- debug:
+    var: splunkforwarder_status.state
+
+- name: Write Report
+  template:
+    src: report.j2
+    dest: "{{ client_folder_report}}"
+  become: true
+
+- name: Get report to Host
+  ansible.builtin.fetch:
+    src: "{{ client_folder_report}}"
+    dest: "{{ host_folder_getreport}}"
+    flat: true
+
+- name: Clean after check "Remove CIS Audit folder"
+  file:
+    path: "{{ client_folder_report}}"
+    state: absent

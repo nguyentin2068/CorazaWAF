@@ -1,0 +1,6 @@
+---
+- hosts: windows
+  gather_facts: true
+  roles:
+    - cis_window
+    

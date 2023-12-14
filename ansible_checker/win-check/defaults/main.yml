@@ -1,0 +1,2 @@
+client_folder_report: D:\\report.txt
+host_folder_getreport: /root/ansible_checker/reports/{{ inventory_hostname }}.txt

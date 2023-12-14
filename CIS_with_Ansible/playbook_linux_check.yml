@@ -1,0 +1,6 @@
+---
+- hosts: linux
+  become: True
+  gather_facts: true
+  roles:
+      - cis_linux

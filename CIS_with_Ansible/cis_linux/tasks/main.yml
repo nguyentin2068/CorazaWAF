@@ -1,0 +1,47 @@
+- name: Copy Mod Security compress folder
+  become: true
+  ansible.builtin.copy:
+    src: "{{ cis_checker }}"
+    dest: "/tmp/{{ cis_checker }}"
+    mode: "0644"
+
+- name: Untar installer
+  ansible.builtin.unarchive:
+    src: "/tmp/{{ cis_checker }}"
+    dest: "/tmp"
+    remote_src: yes
+
+- name: Grant permission exec Goss
+  become: true
+  ansible.builtin.file:
+    path: "{{ cis_untar_tmp }}/goss-linux-amd64"
+    mode: "1777"
+
+- name: Grant permission exec script checker
+  become: true
+  ansible.builtin.file:
+    path: "{{ cis_untar_tmp }}/run_audit.sh"
+    mode: "1777"
+
+- name: Run script checker
+  become: true
+  become_method: sudo
+  command: ./run_audit.sh -v ./vars/CIS.yml -g ./goss.yml -o ./report.json validate
+  args:
+    chdir: "{{ cis_untar_tmp }}"
+
+- name: Get report to Host
+  ansible.builtin.fetch:
+    src: "{{ cis_untar_tmp }}/report.json"
+    dest: "{{ host_folder_getreport}}"
+    flat: yes
+
+- name: Clean after check "Remove CIS Audit compress folder"
+  file:
+    path: "{{ cis_checker }}"
+    state: absent
+
+- name: Clean after check "Remove CIS Audit folder"
+  file:
+    path: "/tmp/{{ cis_checker }}"
+    state: absent

@@ -1,0 +1,4 @@
+---
+cis_checker: "UBUNTU20-CIS-Audit.tar.gz"
+cis_untar_tmp: /tmp/UBUNTU20-CIS-Audit
+host_folder_getreport: ./CIS_with_Ansible/CIS_report_raw/{{ inventory_hostname }}.json

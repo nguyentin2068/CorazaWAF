@@ -1,0 +1,729 @@
+Name;Guest OS;IP Address
+Win-Srv;Microsoft Windows Server 2019 (64-bit);10.201.132.3
+ICT-DXCLUSTER-1;Microsoft Windows Server 2019 (64-bit);10.201.136.3
+ICT-DXCLUSTER-2;Microsoft Windows Server 2019 (64-bit);10.201.136.4
+PROD-NHAPTHUOC-CLUSTER-DB-1;Microsoft Windows Server 2019 (64-bit);10.201.144.250
+PROD-NHAPTHUOC-CLUSTER-DB-2;Microsoft Windows Server 2019 (64-bit);10.201.144.251
+PROD-SHIPMENT-CLUSTER-DB-1;Microsoft Windows Server 2019 (64-bit);10.201.148.26
+PROD-SHIPMENT-CLUSTER-DB-2;Microsoft Windows Server 2019 (64-bit);10.201.148.27
+Jump;Microsoft Windows Server 2019 (64-bit);10.201.152.210
+FRT-POS-FLC-APP;Microsoft Windows Server 2019 (64-bit);10.96.100.100
+FRT-MPOS-APP-01;Microsoft Windows Server 2019 (64-bit);10.96.100.112
+FRT-MPOS-APP-02;Microsoft Windows Server 2019 (64-bit);10.96.100.113
+FRT-mPOSAPI-APP;Microsoft Windows Server 2019 (64-bit);10.96.100.114
+FRT-POS-ICT-APP;Microsoft Windows Server 2019 (64-bit);10.96.100.120
+FLC-PROD-BRAVO-APP;Microsoft Windows Server 2019 (64-bit);10.96.100.135
+FRT-DATA-GW-BI;Microsoft Windows Server 2019 (64-bit);10.96.100.151
+AUTO-UPDATE-TOOLS;Microsoft Windows Server 2019 (64-bit);10.96.100.153
+ICT-PROD-BRAVO-APP;Microsoft Windows Server 2019 (64-bit);10.96.100.154
+FRT-HDDT-WEB;Microsoft Windows Server 2019 (64-bit);10.96.100.183
+FRT-Web-BI-ICT;Microsoft Windows Server 2019 (64-bit);10.96.100.199
+FRT-Web-TuyenDung;Microsoft Windows Server 2019 (64-bit);10.96.100.2
+FRT-FLC-BI-WEB;Microsoft Windows Server 2019 (64-bit);10.96.100.221
+DQH-Bravo-App;Microsoft Windows Server 2022 (64-bit);10.96.100.226
+FRT-Fcare-Bravo-App;Microsoft Windows Server 2019 (64-bit);10.96.100.251
+FRT-API-TuyenDung;Microsoft Windows Server 2016 (64-bit);10.96.100.3
+HDDT-LC-APP;Microsoft Windows Server 2019 (64-bit);10.96.100.30
+CL-PHAR-APP;Microsoft Windows Server 2019 (64-bit);10.96.100.31
+HDDT-FBEATY-APP;Microsoft Windows Server 2019 (64-bit);10.96.100.33
+FRT-File-TuyenDung;Microsoft Windows Server 2019 (64-bit);10.96.100.4
+FRT-OB-WEB;Microsoft Windows Server 2019 (64-bit);10.96.100.42
+CALLLOG-ICT-APP;Microsoft Windows Server 2019 (64-bit);10.96.100.43
+CL-OUTSIDE-WEB;Microsoft Windows Server 2019 (64-bit);10.96.100.44
+MCL-PHAR-APP;Microsoft Windows Server 2019 (64-bit);10.96.100.45
+FRT-OUTSIDE-APP;Microsoft Windows Server 2019 (64-bit);10.96.100.50
+FRT-INSIDE-WEB;Microsoft Windows Server 2019 (64-bit);10.96.100.53
+FRT-INSIDE-API;Microsoft Windows Server 2019 (64-bit);10.96.100.54
+FRT-IS-PHARMA-WEB;Microsoft Windows Server 2019 (64-bit);10.96.100.55
+FRT-InsideNew-Web;Microsoft Windows Server 2019 (64-bit);10.96.100.56
+FRT-WARRANTY-APP;Microsoft Windows Server 2019 (64-bit);10.96.100.60
+FBT-BI-WEB;Microsoft Windows Server 2019 (64-bit);10.96.100.61
+FRT-POS-FLC-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.100
+Core-Cus-LC-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.11
+FRT-DB-PBX;Microsoft Windows Server 2019 (64-bit);10.96.101.110
+DB-Order-Promising;Microsoft Windows Server 2019 (64-bit);10.96.101.111
+FRT-mPOS-DB-PRI;Microsoft Windows Server 2019 (64-bit);10.96.101.112
+FRT-POS-ICT-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.120
+FRT-RSA-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.122
+FRT-PRINT-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.124
+FRT-SHIPMENT-INT-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.125
+ICT-DELIVERY-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.126
+FLC-PROD-BRAVO-DB;Microsoft Windows Server 2012 (64-bit);10.96.101.127
+FRT-FRIENDSELL-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.128
+FIS-TVAN-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.129
+FRT-TVAN-INT-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.130
+FRT-ManageShop-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.131
+DX-SQL-CLUSTER-1;Microsoft Windows Server 2019 (64-bit);10.96.101.132
+DX-SQL-CLUSTER-2;Microsoft Windows Server 2019 (64-bit);10.96.101.133
+DX-SQL-CLUSTER-3;Microsoft Windows Server 2019 (64-bit);10.96.101.134
+ICT-PROD-BRAVO-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.154
+FRT-POS-ICT-LSGD-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.156
+DQH-Bravo-DB;Microsoft Windows Server 2022 (64-bit);10.96.101.157
+FRT-REPLICATE-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.169
+ICT-DISTRIBUTOR;Microsoft Windows Server 2019 (64-bit);10.96.101.170
+Pharma-Repl-Report;Microsoft Windows Server 2019 (64-bit);10.96.101.171
+FRT-OMS-CAP-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.172
+FIS-TVAN-DB-HDDT;Microsoft Windows Server 2019 (64-bit);10.96.101.173
+FRT-Identity-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.179
+FRT-DB-Pri;Microsoft Windows Server 2019 (64-bit);10.96.101.180
+FLC-MYSELF-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.182
+FLC-ORDERRULE-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.183
+FLC-Voucher-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.185
+FLC-3RD-INT-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.186
+FRT-EINVOICE;Microsoft Windows Server 2019 (64-bit);10.96.101.192
+FLC-OPS-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.196
+CFS-REPLICATE-DATA;Microsoft Windows Server 2019 (64-bit);10.96.101.197
+FRT-LOYALTY-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.198
+FRT-DB-BI-ICT;Microsoft Windows Server 2019 (64-bit);10.96.101.199
+FRT-DB-TuyenDung;Microsoft Windows Server 2016 (64-bit);10.96.101.2
+FLC-RETURNHOME-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.200
+FLC-CONTRACT-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.201
+FLC-SERVICEORDER-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.202
+FLC-LOYALTY-INTEGRATION-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.205
+FLC-Promotion-DB-2;Microsoft Windows Server 2019 (64-bit);10.96.101.207
+FLC-CustomerEvents-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.208
+FRT-Fcare-Bravo-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.209
+LC-PIM-SQL;Microsoft Windows Server 2019 (64-bit);10.96.101.210
+FLC-BRAVO-SQL-1;Microsoft Windows Server 2019 (64-bit);10.96.101.215
+FLC-BRAVO-SQL-2;Microsoft Windows Server 2019 (64-bit);10.96.101.218
+LC-BI-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.221
+FLC-IMS-CLUSTER-1;Microsoft Windows Server 2019 (64-bit);10.96.101.224
+FLC-IMS-CLUSTER-2;Microsoft Windows Server 2019 (64-bit);10.96.101.225
+FLC-IMS-CLUSTER-3;Microsoft Windows Server 2019 (64-bit);10.96.101.226
+FLC-FZCS-DB-1;Microsoft Windows Server 2019 (64-bit);10.96.101.229
+FLC-ESM-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.230
+FLC-VEEAM-SERVER;Microsoft Windows Server 2019 (64-bit);10.96.101.250
+IT-TEST-UUID-2;Microsoft Windows Server 2019 (64-bit);10.96.101.252
+CL-Phar-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.29
+lc-identity-db;Microsoft Windows Server 2016 (64-bit);10.96.101.3
+HDDT-LC-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.30
+FRT-ECOM-TG-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.31
+FRT-Customer-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.32
+HDDT-FBEATY-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.33
+FRT-ChotQuy-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.34
+FRT-SIM-TG-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.35
+FRT-BOT-AI;Microsoft Windows Server 2019 (64-bit);10.96.101.36
+LC-CONSOLID-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.4
+FRT-OUTBOUND-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.42
+CALLLOG-ICT-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.43
+CL-OUTSIDE-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.44
+MCL-PHAR-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.45
+POS-FBEAUTY-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.46
+FRT-INSIDE-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.47
+FRT-IS-PHARMA-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.48
+FRT-ISNew-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.49
+FRT-OUTSIDE-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.50
+FRT-WARRANTY-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.60
+FBT-BI-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.61
+FRT-ADS-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.65
+DB-ECOM-PROM-LC;Microsoft Windows Server 2019 (64-bit);10.96.101.7
+FRT-Shipment-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.71
+FRT-SOM-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.72
+FRT-CAP-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.73
+FRT-Report-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.76
+FRT-DQG-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.77
+DB-NOTI-PROD;Microsoft Windows Server 2019 (64-bit);10.96.101.8
+FRT-Report-DB-HA-1;Microsoft Windows Server 2019 (64-bit);10.96.101.85
+FRT-Report-DB-HA-2;Microsoft Windows Server 2019 (64-bit);10.96.101.86
+ICT-DB-PAYMENTGW-SOM;Microsoft Windows Server 2019 (64-bit);10.96.101.89
+DB-POSWRAPPER-PROD;Microsoft Windows Server 2019 (64-bit);10.96.101.9
+FRT-LC-DELIVERY-DB;Microsoft Windows Server 2019 (64-bit);10.96.101.95
+FRT-Debit-DB-Prod;Microsoft Windows Server 2019 (64-bit);10.96.101.98
+FRTDC06;Microsoft Windows Server 2016 (64-bit);10.96.102.1
+PAM-JUMP;Microsoft Windows Server 2019 (64-bit);10.96.102.106
+PAM-JUMP-2;Microsoft Windows Server 2019 (64-bit);10.96.102.107
+Scanner-02;Microsoft Windows Server 2019 (64-bit);10.96.102.108
+FRT-ATA;Microsoft Windows Server 2019 (64-bit);10.96.102.113
+FIM-RODC;Microsoft Windows Server 2016 (64-bit);10.96.102.5
+FRTDC07;Microsoft Windows Server 2016 (64-bit);10.96.102.7
+FRTDC08;Microsoft Windows Server 2016 (64-bit);10.96.102.8
+RODC-FPT.COM;Microsoft Windows Server 2022 (64-bit);10.96.102.9
+ICTWEBSERVICES;Microsoft Windows Server 2019 (64-bit);10.96.120.1
+ICTSERVICES;Microsoft Windows Server 2019 (64-bit);10.96.120.129
+ICTFEWEBSV-NEW;Microsoft Windows Server 2019 (64-bit);10.96.120.2
+ICTBEWEBSV;Microsoft Windows Server 2019 (64-bit);10.96.120.3
+ICTWebLanding;Microsoft Windows Server 2019 (64-bit);10.96.120.7
+ICTDBSERVICES;Microsoft Windows Server 2016 (64-bit);10.96.121.1
+ICTDBSERVICES2;Microsoft Windows Server 2019 (64-bit);10.96.121.2
+ICTDBWEBSV2;Microsoft Windows Server 2019 (64-bit);10.96.121.3
+ICTDBLOG;Microsoft Windows Server 2019 (64-bit);10.96.121.4
+ICTDBWEBSV;Microsoft Windows Server 2019 (64-bit);10.96.121.5
+ECOM-DB-PRODUCT;Microsoft Windows Server 2019 (64-bit);10.96.121.7
+ECOM-RSA-DB;Microsoft Windows Server 2019 (64-bit);10.96.121.9
+ECOM-LC-CMS-PostgreSQL;Ubuntu Linux (64-bit);10.96.121.13
+WEB-ECOM-DB;Ubuntu Linux (64-bit);10.96.121.8
+Proxy-payment-webhook;Ubuntu Linux (64-bit);10.96.121.228
+DMZ-IMAGES;Ubuntu Linux (64-bit);10.96.121.229
+flc-preprod-thumbor;Ubuntu Linux (64-bit);10.96.121.230
+BAPP;Ubuntu Linux (64-bit);10.96.121.234
+ECOM-NGINX-DEV;Ubuntu Linux (64-bit);10.96.121.236
+ECOM-FRT-UNIT;Ubuntu Linux (64-bit);10.96.121.239
+ECOM-FRONTEND-REACT;Ubuntu Linux (64-bit);10.96.120.10
+ecom-ict-redis;Ubuntu Linux (64-bit);10.96.120.12
+ECOM-RSA-WEB-1;Ubuntu Linux (64-bit);10.96.120.13
+ECOM-RSA-WEB-2;Ubuntu Linux (64-bit);10.96.120.14
+ECOM-RSA-JOB;Ubuntu Linux (64-bit);10.96.120.17
+ECOM-PAYMENT-PORTAL;Ubuntu Linux (64-bit);10.96.120.18
+FRTES;Ubuntu Linux (64-bit);10.96.120.19
+FRTLCES;Ubuntu Linux (64-bit);10.96.120.20
+FRTLCES2;Ubuntu Linux (64-bit);10.96.120.21
+ECOM-STOREFRONT-REDIS;Ubuntu Linux (64-bit);10.96.120.28
+ECOM-CUSTOMER-REDIS;Ubuntu Linux (64-bit);10.96.120.29
+ECOM-CMS-Redis;Ubuntu Linux (64-bit);10.96.120.33
+WEB-NHATHUOC-BE-FE-2;Ubuntu Linux (64-bit);10.96.120.36
+FLC-PREPRO-CMS-CORE-1;Ubuntu Linux (64-bit);10.96.120.40
+frtnhathuoc-3;Ubuntu Linux (64-bit);10.96.120.43
+CF-Tunnel;Ubuntu Linux (64-bit);10.96.120.47
+core-product-api;Ubuntu Linux (64-bit);10.96.120.8
+front-door-api;Ubuntu Linux (64-bit);10.96.120.9
+PROXY-LC-OFFLINE;Ubuntu Linux (64-bit);10.201.152.65
+PROXY-PRINT-CENTER;Ubuntu Linux (64-bit);10.201.152.66
+PROXY-ICT-OFFLINE;Ubuntu Linux (64-bit);10.201.152.67
+PROXY-WEB-LC;Ubuntu Linux (64-bit);10.201.152.2
+PROXY-PAYMENT;Ubuntu Linux (64-bit);10.201.152.4
+PROXY-PUBLIC-01;Ubuntu Linux (64-bit);10.201.152.5
+PROXY-NHAPTHUOC;Ubuntu Linux (64-bit);10.201.152.6
+ubuntu;Ubuntu Linux (64-bit);10.201.136.100
+ICT-POSTGRESQL-1-y37kum4f-master1;Ubuntu Linux (64-bit);10.201.136.101
+ICT-POSTGRESQL-1-y37kum4f-slave1;Ubuntu Linux (64-bit);10.201.136.102
+ICT-POSTGRESQL-1-y37kum4f-slave2;Ubuntu Linux (64-bit);10.201.136.103
+ICT-MONGODB-1-8mep8c11-master1;Ubuntu Linux (64-bit);10.201.136.105
+ICT-MONGODB-1-8mep8c11-slave1;Ubuntu Linux (64-bit);10.201.136.106
+ICT-MONGODB-1-8mep8c11-slave2;Ubuntu Linux (64-bit);10.201.136.107
+ICT-MONGODB-OMS-s099stc0-master1;Ubuntu Linux (64-bit);10.201.136.108
+ICT-MONGODB-CONTRACT-xozxowyb-master1;Ubuntu Linux (64-bit);10.201.136.109
+ICT-KONG-DB-nuigzy9b-master1;Ubuntu Linux (64-bit);10.201.136.110
+ICT-KONG-DB-nuigzy9b-slave1;Ubuntu Linux (64-bit);10.201.136.111
+ICT-KONG-DB-nuigzy9b-slave2;Ubuntu Linux (64-bit);10.201.136.112
+ICT-MONGODB-INVENTORY-u674kj3q-master1;Ubuntu Linux (64-bit);10.201.136.114
+ICT-MONGODB-DEBIT-j4aisoy9-master1;Ubuntu Linux (64-bit);10.201.136.115
+ICT-PIM-Mongodb;Ubuntu Linux (64-bit);10.201.136.12
+PROD-ICT-ES-01;Ubuntu Linux (64-bit);10.201.136.13
+PROD-ICT-ES-02;Ubuntu Linux (64-bit);10.201.136.14
+PROD-ICT-ES-03;Ubuntu Linux (64-bit);10.201.136.15
+PROD-ICT-ES-KIBANA;Ubuntu Linux (64-bit);10.201.136.16
+PROD-ICT-ES-MONITOR;Ubuntu Linux (64-bit);10.201.136.17
+ICT-KONG-DB;Ubuntu Linux (64-bit);10.201.136.2
+ict-nginx-1;Ubuntu Linux (64-bit);10.201.139.128
+ict-nginx-2;Ubuntu Linux (64-bit);10.201.139.129
+ICT-ZOOKEEPER-1;Ubuntu Linux (64-bit);10.201.137.1
+ict-redis-1;Ubuntu Linux (64-bit);10.201.137.10
+ICT-INVENTORY-REDIS;Ubuntu Linux (64-bit);10.201.137.11
+ICT-PIM-REDIS;Ubuntu Linux (64-bit);10.201.137.12
+ICT-ZUUL-Redis;Ubuntu Linux (64-bit);10.201.137.13
+ict-inventory-redis;Ubuntu Linux (64-bit);10.201.137.14
+DEV-ICT-REDIS-1;Ubuntu Linux (64-bit);10.201.137.15
+ICT-REDIS-RSA;Ubuntu Linux (64-bit);10.201.137.16
+ICT-REDISPRINTSOCKET;Ubuntu Linux (64-bit);10.201.137.17
+ICT-Payment-Core-Redis;Ubuntu Linux (64-bit);10.201.137.18
+ICT-REDIS-PRINTCENTER;Ubuntu Linux (64-bit);10.201.137.19
+ICT-ZOOKEEPER-2;Ubuntu Linux (64-bit);10.201.137.2
+ICT-REDIS-RCA;Ubuntu Linux (64-bit);10.201.137.20
+ICT-REDIS-OrderRuler;Ubuntu Linux (64-bit);10.201.137.21
+ICT-ZOOKEEPER-3;Ubuntu Linux (64-bit);10.201.137.3
+ICT-KAFKA-1;Ubuntu Linux (64-bit);10.201.137.4
+ICT-KAFKA-2;Ubuntu Linux (64-bit);10.201.137.5
+ICT-KAFKA-3;Ubuntu Linux (64-bit);10.201.137.6
+ICT-RABBITMQ-01;Ubuntu Linux (64-bit);10.201.137.7
+ICT-RABBITMQ-02;Ubuntu Linux (64-bit);10.201.137.8
+ICT-RABBITMQ-03;Ubuntu Linux (64-bit);10.201.137.9
+frt-partner-gw;Ubuntu Linux (64-bit);10.96.102.83
+FRT-GW-Log-Agent;Ubuntu Linux (64-bit);10.96.102.84
+FRT-RSA-API-01;Ubuntu Linux (64-bit);10.96.103.129
+FRT-RSA-API-02;Ubuntu Linux (64-bit);10.96.103.130
+FRT-LC-INVENTORY-1;Ubuntu Linux (64-bit);10.96.103.133
+FRT-LC-INVENTORY-2;Ubuntu Linux (64-bit);10.96.103.134
+Shipment-Integration-API-1;Ubuntu Linux (64-bit);10.96.103.135
+Shipment-Integration-API-2;Ubuntu Linux (64-bit);10.96.103.136
+FRT-RSA-API-03;Ubuntu Linux (64-bit);10.96.103.137
+FRT-RSA-API-04;Ubuntu Linux (64-bit);10.96.103.138
+FRT-LC-INVENTORY-3;Ubuntu Linux (64-bit);10.96.103.139
+FRT-LC-INVENTORY-4;Ubuntu Linux (64-bit);10.96.103.140
+FRT-ES-API-1;Ubuntu Linux (64-bit);10.96.103.141
+FRT-ES-API-2;Ubuntu Linux (64-bit);10.96.103.142
+Shipment-Integration-API-3;Ubuntu Linux (64-bit);10.96.103.143
+FLC-BE-Indexing-Service-1;Ubuntu Linux (64-bit);10.96.103.144
+FLC-BE-Indexing-Service-2;Ubuntu Linux (64-bit);10.96.103.145
+FLC-BE-Indexing-Service-3;Ubuntu Linux (64-bit);10.96.103.146
+FLC-BE-Indexing-Serivce-4;Ubuntu Linux (64-bit);10.96.103.147
+FLC-BE-Hope-RSA-1;Ubuntu Linux (64-bit);10.96.103.148
+FLC-BE-Hope-RSA-2;Ubuntu Linux (64-bit);10.96.103.149
+FRT-CAR-SERVICE-1;Ubuntu Linux (64-bit);10.96.103.150
+FRT-CAR-SERVICE-2;Ubuntu Linux (64-bit);10.96.103.151
+FRT-CAR-SERVICE-3;Ubuntu Linux (64-bit);10.96.103.152
+FLC-CUSTOMER360-RSA;Ubuntu Linux (64-bit);10.96.103.153
+FRT-IAM-API-1;Ubuntu Linux (64-bit);10.96.103.154
+FRT-IAM-API-2;Ubuntu Linux (64-bit);10.96.103.155
+FLC-DX-LoyaltyRule-1;Ubuntu Linux (64-bit);10.96.103.156
+FLC-DX-LoyaltyRule-2;Ubuntu Linux (64-bit);10.96.103.157
+FLC-DX-LoyaltyRule-3;Ubuntu Linux (64-bit);10.96.103.158
+FLC-IMS-CORE-API-2;Ubuntu Linux (64-bit);10.96.103.159
+FLC-RSA-BE-V2-01;Ubuntu Linux (64-bit);10.96.103.160
+FLC-RSA-ECOM-BE-V2-01;Ubuntu Linux (64-bit);10.96.103.161
+FLC-RSA-BE-V2-02;Ubuntu Linux (64-bit);10.96.103.162
+LC-LEGACY-API;Ubuntu Linux (64-bit);10.96.103.163
+FLC-IMS-BOOKING-API-2;Ubuntu Linux (64-bit);10.96.103.164
+LC-LEGACY-API-02;Ubuntu Linux (64-bit);10.96.103.165
+FLC-SERVICE-ORDER-API;Ubuntu Linux (64-bit);10.96.103.166
+FLC-CONTRACT-API;Ubuntu Linux (64-bit);10.96.103.167
+FLC-PAYMENT-PORTAL-WEB;Ubuntu Linux (64-bit);10.96.103.168
+FLC-PAYMENT-PORTAL-WEB-02;Ubuntu Linux (64-bit);10.96.103.169
+FLC-SERVICE-ORDER-API-02;Ubuntu Linux (64-bit);10.96.103.170
+FLC-CONTRACT-API-02;Ubuntu Linux (64-bit);10.96.103.171
+FLC-PAYMENT;Ubuntu Linux (64-bit);10.96.103.172
+FLC-RSA-ECOM-BE-V2-02;Ubuntu Linux (64-bit);10.96.103.173
+FLC-3RD-INTEGRATION-3;Ubuntu Linux (64-bit);10.96.103.174
+FLC-LOYALTY-INTEGRATION-1;Ubuntu Linux (64-bit);10.96.103.175
+FLC-LOYALTY-INTEGRATION-2;Ubuntu Linux (64-bit);10.96.103.176
+FLC-LOYALTY-INTEGRATION-3;Ubuntu Linux (64-bit);10.96.103.177
+FLC-PromotionListener-API-1;Ubuntu Linux (64-bit);10.96.103.178
+FLC-PromotionListener-API-2;Ubuntu Linux (64-bit);10.96.103.179
+FLC-PromotionListener-API-3;Ubuntu Linux (64-bit);10.96.103.180
+FLC-Promotion-BE-2;Ubuntu Linux (64-bit);10.96.103.181
+FLC-Promotion-Voucher-Serivce;Ubuntu Linux (64-bit);10.96.103.182
+FLC-IMS-BOOKING-API;Ubuntu Linux (64-bit);10.96.103.195
+FLC-IMS-STOCK-PRICING-API-2;Ubuntu Linux (64-bit);10.96.103.196
+FLC-Promotion-Core-7;Ubuntu Linux (64-bit);10.96.103.199
+FLC-IMS-INVENTORY-API-2;Ubuntu Linux (64-bit);10.96.103.200
+FLC-Loyalty-Listener-3;Ubuntu Linux (64-bit);10.96.103.201
+FLC-Loyalty-Listener-4;Ubuntu Linux (64-bit);10.96.103.202
+FLC-CustomerEvents-Service-1;Ubuntu Linux (64-bit);10.96.103.203
+FLC-CustomerEvents-Service-2;Ubuntu Linux (64-bit);10.96.103.204
+BRAVO-NGINX-LB-1;Ubuntu Linux (64-bit);10.96.103.205
+BRAVO-NGINX-LB-2;Ubuntu Linux (64-bit);10.96.103.206
+FRT-AIRFLOW;Ubuntu Linux (64-bit);10.96.103.207
+LC-PIM-FE;Ubuntu Linux (64-bit);10.96.103.208
+LC-PIM-Core;Ubuntu Linux (64-bit);10.96.103.209
+LC-PIM-Portal;Ubuntu Linux (64-bit);10.96.103.210
+LC-PIM-Pricing;Ubuntu Linux (64-bit);10.96.103.211
+LC-PIM-RuleEngine;Ubuntu Linux (64-bit);10.96.103.212
+LC-PIM-CatalogListener;Ubuntu Linux (64-bit);10.96.103.213
+LC-PIM-ProductAPI-1;Ubuntu Linux (64-bit);10.96.103.214
+LC-PIM-PricingAPI-1;Ubuntu Linux (64-bit);10.96.103.215
+LC-PIM-Logstash;Ubuntu Linux (64-bit);10.96.103.216
+LC-PIM-Core-2;Ubuntu Linux (64-bit);10.96.103.217
+LC-PIM-ProductAPI-2;Ubuntu Linux (64-bit);10.96.103.218
+LC-PIM-PricingAPI-2;Ubuntu Linux (64-bit);10.96.103.219
+FLC-Loyalty-Core-1;Ubuntu Linux (64-bit);10.96.103.220
+FLC-Loyalty-Core-2;Ubuntu Linux (64-bit);10.96.103.221
+FLC-Loyalty-Core-3;Ubuntu Linux (64-bit);10.96.103.222
+FLC-ES-MONITOR-1;Ubuntu Linux (64-bit);10.96.103.223
+FLC-ES-MONITOR-2;Ubuntu Linux (64-bit);10.96.103.224
+ICT-AppCenter-APP;Ubuntu Linux (64-bit);10.96.103.225
+FLC-RSA-BE-V2-03;Ubuntu Linux (64-bit);10.96.103.226
+FLC-RSA-BE-V2-04;Ubuntu Linux (64-bit);10.96.103.227
+FLC-Loyalty-Listener-1;Ubuntu Linux (64-bit);10.96.103.228
+FLC-Loyalty-Listener-2;Ubuntu Linux (64-bit);10.96.103.229
+APP-NOTI-PROD-8;Ubuntu Linux (64-bit);10.96.103.230
+APP-NOTI-PROD-9;Ubuntu Linux (64-bit);10.96.103.231
+APP-NOTI-PROD-10;Ubuntu Linux (64-bit);10.96.103.232
+FLC-Webhook-API;Ubuntu Linux (64-bit);10.96.103.233
+FLC-PIM-SEARCH-1;Ubuntu Linux (64-bit);10.96.103.234
+LC-PIM-ProductAPI-4;Ubuntu Linux (64-bit);10.96.103.236
+LC-PIM-ProductAPI-5;Ubuntu Linux (64-bit);10.96.103.237
+LC-PIM-ProductAPI-3;Ubuntu Linux (64-bit);10.96.103.238
+FLC-PIM-SEARCH-2;Ubuntu Linux (64-bit);10.96.103.239
+FLC-RSA-BE-V2-05;Ubuntu Linux (64-bit);10.96.103.240
+FLC-RSA-BE-V2-06;Ubuntu Linux (64-bit);10.96.103.241
+FLC-RSA-BE-V2-07;Ubuntu Linux (64-bit);10.96.103.242
+FLC-EHO-WEB;Ubuntu Linux (64-bit);10.96.103.243
+FLC-F0-Evidence-BE-2;Ubuntu Linux (64-bit);10.96.103.244
+FLC-F0-Evidence-FE-1;Ubuntu Linux (64-bit);10.96.103.245
+FLC-F0-Evidence-FE-2;Ubuntu Linux (64-bit);10.96.103.246
+FLC-IMS-STOCK-PRICING-API;Ubuntu Linux (64-bit);10.96.103.247
+FLC-IMS-CORE-API-1;Ubuntu Linux (64-bit);10.96.103.248
+FLC-IMS-POS-LISTENER;Ubuntu Linux (64-bit);10.96.103.249
+FLC-IMS-INVENTORY-API-1;Ubuntu Linux (64-bit);10.96.103.250
+FLC-FriendSell-ZaloCustomerService;Ubuntu Linux (64-bit);10.96.103.251
+FLC-ESM-BE-1;Ubuntu Linux (64-bit);10.96.103.252
+FLC-ESM-BE-2;Ubuntu Linux (64-bit);10.96.103.253
+fst-db-daotao;Ubuntu Linux (64-bit);10.96.101.1
+FRT-DATA-PLATFORM;Ubuntu Linux (64-bit);10.96.101.113
+FLC-IMS-MONGODB;Ubuntu Linux (64-bit);10.96.101.114
+FLC-MONGOS-1;Ubuntu Linux (64-bit);10.96.101.187
+FLC-MONGOS-2;Ubuntu Linux (64-bit);10.96.101.188
+FLC-MONGO-SHARD-3;Ubuntu Linux (64-bit);10.96.101.189
+FLC-MONGO-SHARD-4;Ubuntu Linux (64-bit);10.96.101.193
+FLC-MONGO-SHARD-5;Ubuntu Linux (64-bit);10.96.101.194
+FLC-MONGO-SHARD-6;Ubuntu Linux (64-bit);10.96.101.195
+FLC-CONTRACT-MONGO;Ubuntu Linux (64-bit);10.96.101.203
+FLC-SERVICE-ORDER-MONGO;Ubuntu Linux (64-bit);10.96.101.204
+FLC-PromotionListener-Mongo;Ubuntu Linux (64-bit);10.96.101.206
+LC-PIM-MongoDB;Ubuntu Linux (64-bit);10.96.101.211
+FRT-CMS-PostgreSQL-frt.vn;Ubuntu Linux (64-bit);10.96.101.212
+FRT-MasterData-PostgreSQL;Ubuntu Linux (64-bit);10.96.101.213
+ICT-AppCenter-PostgreSQL;Ubuntu Linux (64-bit);10.96.101.214
+FLC-PREPRO-CMS-CORE-PostgreSQL;Ubuntu Linux (64-bit);10.96.101.219
+FLC-PREPRO-RatingCore-Postgres;Ubuntu Linux (64-bit);10.96.101.220
+FLC-F0-Evidence-Postgres;Ubuntu Linux (64-bit);10.96.101.222
+FLC-IMS-POSTGRES;Ubuntu Linux (64-bit);10.96.101.231
+DMZ-ICT-API-LB;Ubuntu Linux (64-bit);10.96.102.38
+DMZ-Proxy-BI;Ubuntu Linux (64-bit);10.96.102.44
+SQL-Server03;Ubuntu Linux (64-bit);10.96.102.46
+DMZ-Proxy-06;Ubuntu Linux (64-bit);10.96.102.54
+DMZ-Customer-Proxy;Ubuntu Linux (64-bit);10.96.102.55
+LoadBalancer-SE-03;Ubuntu Linux (64-bit);10.96.172.203
+LoadBalancer-SE-04;Ubuntu Linux (64-bit);10.96.172.204
+AviControler-01;Ubuntu Linux (64-bit);10.96.172.251
+FRT-DX-RABBITMQ-01;Ubuntu Linux (64-bit);10.96.103.10
+FRT-DX-RABBITMQ-02;Ubuntu Linux (64-bit);10.96.103.11
+FRT-DX-RABBITMQ-03;Ubuntu Linux (64-bit);10.96.103.12
+FRT-ICT-RABBITMQ-1;Ubuntu Linux (64-bit);10.96.103.13
+FRT-ICT-RABBITMQ-2;Ubuntu Linux (64-bit);10.96.103.14
+FRT-ICT-RABBITMQ-3;Ubuntu Linux (64-bit);10.96.103.15
+Redis-Insight;Ubuntu Linux (64-bit);10.96.103.16
+FRT-PRODUCT-REDIS;Ubuntu Linux (64-bit);10.96.103.17
+FLC-IMS-REDIS;Ubuntu Linux (64-bit);10.96.103.18
+DX-REDIS-PRICING;Ubuntu Linux (64-bit);10.96.103.21
+DX-REDIS-NOTI;Ubuntu Linux (64-bit);10.96.103.22
+DX-REDIS-RSA;Ubuntu Linux (64-bit);10.96.103.23
+DX-REDIS-PRODUCT;Ubuntu Linux (64-bit);10.96.103.24
+IAM-REDIS;Ubuntu Linux (64-bit);10.96.103.25
+ESM-REDIS;Ubuntu Linux (64-bit);10.96.103.26
+FRT-REDIS-REPORT;Ubuntu Linux (64-bit);10.96.103.27
+FRT-RULE-ENGINE-REDIS;Ubuntu Linux (64-bit);10.96.103.28
+FRT-PROMOTION-REDIS;Ubuntu Linux (64-bit);10.96.103.29
+FRT-VOUCHER-REDIS;Ubuntu Linux (64-bit);10.96.103.30
+FLC-DX-Loyalty-Redis;Ubuntu Linux (64-bit);10.96.103.31
+FRT-CMS-Redis-frt.vn;Ubuntu Linux (64-bit);10.96.103.32
+FLC-SHIPMENT-REDIS;Ubuntu Linux (64-bit);10.96.103.33
+FLC-DX-Loyalty-Redis-2;Ubuntu Linux (64-bit);10.96.103.34
+FLC-INSIDE-REDIS;Ubuntu Linux (64-bit);10.96.103.35
+FLC-DX-PAYMENT-REDIS;Ubuntu Linux (64-bit);10.96.103.36
+ICT-INVENTORY-REDIS;Ubuntu Linux (64-bit);10.96.103.38
+FLC-LOYALTY-INTEGRATION-REDIS;Ubuntu Linux (64-bit);10.96.103.39
+FLC-CAR-SERVICE-REDIS;Ubuntu Linux (64-bit);10.96.103.40
+FLC-RCA-REDIS;Ubuntu Linux (64-bit);10.96.103.41
+FLC-CustomerEvents-REDIS;Ubuntu Linux (64-bit);10.96.103.43
+LC-PIM-Redis;Ubuntu Linux (64-bit);10.96.103.44
+FRT-Nextjs-Redis-frt.vn;Ubuntu Linux (64-bit);10.96.103.45
+LC-CustomerApp-Redis;Ubuntu Linux (64-bit);10.96.103.46
+ICT-AppCenter-Redis;Ubuntu Linux (64-bit);10.96.103.47
+FLC-PREPRO-STOREFRONT-REDIS;Ubuntu Linux (64-bit);10.96.103.48
+FLC-PREPROD-CUSTOMER-REDIS;Ubuntu Linux (64-bit);10.96.103.49
+FLC-PREPROD-CMS-REDIS;Ubuntu Linux (64-bit);10.96.103.50
+FLC-PREPROD-INVENTORY-REDIS;Ubuntu Linux (64-bit);10.96.103.51
+RSA-REDIS-BACKUP;Ubuntu Linux (64-bit);10.96.103.52
+FLC-RSA-ECOM-REDIS;Ubuntu Linux (64-bit);10.96.103.53
+LC-PIM-ProductRedis;Ubuntu Linux (64-bit);10.96.103.54
+FLC-RATING-CORE-REDIS;Ubuntu Linux (64-bit);10.96.103.55
+FLC-FZCS-RABBITMQ-1;Ubuntu Linux (64-bit);10.96.103.56
+DX-REDIS-RSA-CLONE;Ubuntu Linux (64-bit);10.96.103.57
+DX-REDIS-ASSIGN-JOB;Ubuntu Linux (64-bit);10.96.103.58
+IT-Redis-1;Ubuntu Linux (64-bit);10.96.103.59
+IT-Redis-2;Ubuntu Linux (64-bit);10.96.103.60
+FLC-IMS-STOCKPRICING-REDIS;Ubuntu Linux (64-bit);10.96.103.61
+FRT-KAFKA-DELI-ORDER;Ubuntu Linux (64-bit);10.96.103.9
+PAM-JUMP-03;Ubuntu Linux (64-bit);10.96.102.101
+Zabbix-Proxy-1;Ubuntu Linux (64-bit);10.96.102.103
+fst-web-daotao;Ubuntu Linux (64-bit);10.96.100.1
+optimize-hub;Ubuntu Linux (64-bit);10.96.100.10
+FRT-SHORTLINK-APP;Ubuntu Linux (64-bit);10.96.100.101
+LCD-Schedule-API;Ubuntu Linux (64-bit);10.96.100.102
+FIS-TVAN-APP;Ubuntu Linux (64-bit);10.96.100.103
+FRT-PRINT-CENTER-APP-01;Ubuntu Linux (64-bit);10.96.100.106
+FRT-PRINT-CENTER-APP-02;Ubuntu Linux (64-bit);10.96.100.107
+FRT-CMSstrapi-frt.vn;Ubuntu Linux (64-bit);10.96.100.109
+lc-consolidate-rab;Ubuntu Linux (64-bit);10.96.100.11
+MPOS-LOADBALANCER;Ubuntu Linux (64-bit);10.96.100.116
+FRT-CMS-API-frt.vn;Ubuntu Linux (64-bit);10.96.100.117
+FRT-Nextjs-Frontend-frt.vn;Ubuntu Linux (64-bit);10.96.100.118
+data-pipeline;Ubuntu Linux (64-bit);10.96.100.12
+FRT-RSA-WEB-01;Ubuntu Linux (64-bit);10.96.100.121
+FRT-RSA-WEB-02;Ubuntu Linux (64-bit);10.96.100.122
+LC-LEGACY-SERVICE;Ubuntu Linux (64-bit);10.96.100.123
+FRT-PRINT-SOCKET-01;Ubuntu Linux (64-bit);10.96.100.124
+FRT-PRINT-SOCKET-02;Ubuntu Linux (64-bit);10.96.100.125
+FRT-Debit-Service-Prod-2;Ubuntu Linux (64-bit);10.96.100.126
+FRT-Debit-Web-Prod-2;Ubuntu Linux (64-bit);10.96.100.127
+FRT-ReturnHome-API-2;Ubuntu Linux (64-bit);10.96.100.128
+FRT-ReturnHome-Web-02;Ubuntu Linux (64-bit);10.96.100.129
+Core-Cus-LC-API-2;Ubuntu Linux (64-bit);10.96.100.131
+APP-USER-PROFILE-SERIVCE;Ubuntu Linux (64-bit);10.96.100.132
+FRT-MasterData-FrontEnd;Ubuntu Linux (64-bit);10.96.100.133
+FRT-PAYMENT-APP-2;Ubuntu Linux (64-bit);10.96.100.134
+App-POS-OMS-PROD-2;Ubuntu Linux (64-bit);10.96.100.136
+FRT-SHIPMENT-INT;Ubuntu Linux (64-bit);10.96.100.137
+FRT-LC-DELIVERY-APP-2;Ubuntu Linux (64-bit);10.96.100.138
+FRT-PAYMENT-GATEWAY-2;Ubuntu Linux (64-bit);10.96.100.139
+download-app-mobile;Ubuntu Linux (64-bit);10.96.100.14
+FRT-PAYMENT-INTEGRATION-2;Ubuntu Linux (64-bit);10.96.100.140
+ManageShop-Production-2;Ubuntu Linux (64-bit);10.96.100.141
+ManageShop-Production-3;Ubuntu Linux (64-bit);10.96.100.142
+FRT-Shipment-App-2;Ubuntu Linux (64-bit);10.96.100.143
+ManageShop-Production;Ubuntu Linux (64-bit);10.96.100.145
+Jenkins-mobile-node;Ubuntu Linux (64-bit);10.96.100.148
+FRT-DX-JENKINS;Ubuntu Linux (64-bit);10.96.100.149
+dbxplatdebug;Ubuntu Linux (64-bit);10.96.100.15
+FRT-DX-ANSIBLE;Ubuntu Linux (64-bit);10.96.100.150
+FRT-APIAkaChain;Ubuntu Linux (64-bit);10.96.100.152
+FRT-EINVOICE-SERVICE;Ubuntu Linux (64-bit);10.96.100.155
+FRT-EINVOICE-SERVICE-2;Ubuntu Linux (64-bit);10.96.100.159
+App-PRO-SWM-POS;Ubuntu Linux (64-bit);10.96.100.16
+FRT-PRINT-SOCKET-03;Ubuntu Linux (64-bit);10.96.100.161
+FRT-PRINT-SOCKET-04;Ubuntu Linux (64-bit);10.96.100.162
+App-POS-OMS-PROD-4;Ubuntu Linux (64-bit);10.96.100.164
+App-Cart-Prod-2;Ubuntu Linux (64-bit);10.96.100.165
+Core-Cus-LC-API-3;Ubuntu Linux (64-bit);10.96.100.167
+ES-PROD-NODE2;Ubuntu Linux (64-bit);10.96.100.17
+APP-NOTI-PROD-2;Ubuntu Linux (64-bit);10.96.100.170
+APP-NOTI-PROD-3;Ubuntu Linux (64-bit);10.96.100.171
+APP-USER-PROFILE-SERVICE-2;Ubuntu Linux (64-bit);10.96.100.172
+APP-USER-PROFILE-SERVICE-3;Ubuntu Linux (64-bit);10.96.100.173
+App-Cart-Prod-3;Ubuntu Linux (64-bit);10.96.100.174
+App-Cart-Prod-4;Ubuntu Linux (64-bit);10.96.100.175
+ES-PROD-NODE4;Ubuntu Linux (64-bit);10.96.100.18
+FLC-MYSELF-APP;Ubuntu Linux (64-bit);10.96.100.182
+FLC-Promotion-FE;Ubuntu Linux (64-bit);10.96.100.185
+FLC-Promotion-Core-1;Ubuntu Linux (64-bit);10.96.100.186
+FLC-Promotion-Core-2;Ubuntu Linux (64-bit);10.96.100.187
+FLC-Promotion-Core-3;Ubuntu Linux (64-bit);10.96.100.188
+FLC-Voucher-BE;Ubuntu Linux (64-bit);10.96.100.189
+Prod-ContentHub-Service;Ubuntu Linux (64-bit);10.96.100.19
+ICT-INSTALLMENT-SERVICE;Ubuntu Linux (64-bit);10.96.100.191
+FLC-Voucher-Core-1;Ubuntu Linux (64-bit);10.96.100.192
+FLC-Voucher-Core-2;Ubuntu Linux (64-bit);10.96.100.193
+FLC-Voucher-Core-3;Ubuntu Linux (64-bit);10.96.100.194
+FLC-MYSELF-APP-2;Ubuntu Linux (64-bit);10.96.100.197
+FRT-LC-DELIVERY-APP-3;Ubuntu Linux (64-bit);10.96.100.198
+APP-NOTI-PROD;Ubuntu Linux (64-bit);10.96.100.20
+FRT-Shipment-App-3;Ubuntu Linux (64-bit);10.96.100.200
+FLC-SHIPMENT-EXECUTION-1;Ubuntu Linux (64-bit);10.96.100.202
+FLC-SHIPMENT-EXECUTION-2;Ubuntu Linux (64-bit);10.96.100.203
+FLC-SHIPMENT-EXECUTION-3;Ubuntu Linux (64-bit);10.96.100.204
+Flink-RDP-Master;Ubuntu Linux (64-bit);10.96.100.205
+Flink-RDP-Slave-1;Ubuntu Linux (64-bit);10.96.100.206
+Flink-RDP-Slave-2;Ubuntu Linux (64-bit);10.96.100.207
+FLC-3RD-INTEGRATION;Ubuntu Linux (64-bit);10.96.100.208
+ES-PROD-NODE3;Ubuntu Linux (64-bit);10.96.100.21
+NT-ESM-API-1;Ubuntu Linux (64-bit);10.96.100.210
+NT-ESM-API-2;Ubuntu Linux (64-bit);10.96.100.211
+NT-ESM-API-3;Ubuntu Linux (64-bit);10.96.100.212
+FLC-RSA-Public-API;Ubuntu Linux (64-bit);10.96.100.213
+FLC-BE-Helpdesk-service;Ubuntu Linux (64-bit);10.96.100.214
+FLC-FE-Helpdesk-service;Ubuntu Linux (64-bit);10.96.100.215
+FLC-FE-Hope-RSA-1;Ubuntu Linux (64-bit);10.96.100.216
+FLC-FE-Hope-RSA-2;Ubuntu Linux (64-bit);10.96.100.217
+ES-PROD-NODE9;Ubuntu Linux (64-bit);10.96.100.218
+ES-PROD-NODE6;Ubuntu Linux (64-bit);10.96.100.22
+LC-Voucher-Partner-API;Ubuntu Linux (64-bit);10.96.100.222
+LC-RealCustomerAppAPI-01;Ubuntu Linux (64-bit);10.96.100.223
+LC-RedisCustomerApp;Ubuntu Linux (64-bit);10.96.100.224
+LC-RealCustomerAppAPI-02;Ubuntu Linux (64-bit);10.96.100.225
+LC-MasterData-Redis;Ubuntu Linux (64-bit);10.96.100.227
+FRT-LOYALTY-APP-1;Ubuntu Linux (64-bit);10.96.100.228
+FRT-LOYALTY-APP-2;Ubuntu Linux (64-bit);10.96.100.229
+KAFKA-1;Ubuntu Linux (64-bit);10.96.100.23
+FRT-LOYALTY-APP-3;Ubuntu Linux (64-bit);10.96.100.230
+FRT-LOYALTY-CORE-1;Ubuntu Linux (64-bit);10.96.100.231
+FRT-LOYALTY-CORE-2;Ubuntu Linux (64-bit);10.96.100.232
+FRT-LOYALTY-CORE-3;Ubuntu Linux (64-bit);10.96.100.233
+KAFKA-7;Ubuntu Linux (64-bit);10.96.100.234
+FRT-PAYMENT-GATEWAY-3;Ubuntu Linux (64-bit);10.96.100.235
+FRT-PAYMENT-INTEGRATION-3;Ubuntu Linux (64-bit);10.96.100.236
+FRT-PAYMENT-APP-3;Ubuntu Linux (64-bit);10.96.100.237
+FRT-PAYMENT-APP-4;Ubuntu Linux (64-bit);10.96.100.238
+FRT-LOYALTY-APP-4;Ubuntu Linux (64-bit);10.96.100.239
+KAFKA-2;Ubuntu Linux (64-bit);10.96.100.24
+App-OMS-5;Ubuntu Linux (64-bit);10.96.100.240
+App-OMS-6;Ubuntu Linux (64-bit);10.96.100.241
+FLC-Voucher-Core-4;Ubuntu Linux (64-bit);10.96.100.242
+KAFKA-8;Ubuntu Linux (64-bit);10.96.100.243
+KAFKA-9;Ubuntu Linux (64-bit);10.96.100.244
+FLC-Promotion-Core-4;Ubuntu Linux (64-bit);10.96.100.245
+FLC-Promotion-Core-5;Ubuntu Linux (64-bit);10.96.100.246
+KAFKA-10;Ubuntu Linux (64-bit);10.96.100.247
+FLC-Promotion-FE-2;Ubuntu Linux (64-bit);10.96.100.248
+FLC-IMS-INVENTORY-STREAM;Ubuntu Linux (64-bit);10.96.100.249
+KAFKA-3;Ubuntu Linux (64-bit);10.96.100.25
+Jenkins-ICT-mobile-node;Ubuntu Linux (64-bit);10.96.100.250
+FLC-Contract-ING-API;Ubuntu Linux (64-bit);10.96.100.252
+KAFKA-4;Ubuntu Linux (64-bit);10.96.100.26
+KAFKA-5;Ubuntu Linux (64-bit);10.96.100.27
+KAFKA-6;Ubuntu Linux (64-bit);10.96.100.28
+ES-PROD-NODE7;Ubuntu Linux (64-bit);10.96.100.29
+FRT-MasterData-Core;Ubuntu Linux (64-bit);10.96.100.32
+FRT-MasterData-API-1;Ubuntu Linux (64-bit);10.96.100.34
+App-POS-OMS-PROD;Ubuntu Linux (64-bit);10.96.100.35
+App-OMS-1;Ubuntu Linux (64-bit);10.96.100.36
+App-Import-Data;Ubuntu Linux (64-bit);10.96.100.37
+WEB-IMPORT-DATA;Ubuntu Linux (64-bit);10.96.100.38
+App-Cart-Prod;Ubuntu Linux (64-bit);10.96.100.39
+ES-PROD-NODE8;Ubuntu Linux (64-bit);10.96.100.40
+ES-PROD-ENTERPRISE-SEARCH;Ubuntu Linux (64-bit);10.96.100.41
+prod-audit-service;Ubuntu Linux (64-bit);10.96.100.47
+FRT-MasterData-API-2;Ubuntu Linux (64-bit);10.96.100.48
+Core-Cus-LC-API;Ubuntu Linux (64-bit);10.96.100.51
+Core-Cus-LC-Redis;Ubuntu Linux (64-bit);10.96.100.52
+frt-api-authz-service;Ubuntu Linux (64-bit);10.96.100.57
+frt-fe-onehub-authz;Ubuntu Linux (64-bit);10.96.100.58
+FRT-Warranty-Serivce;Ubuntu Linux (64-bit);10.96.100.59
+FRT-Promotion-Service;Ubuntu Linux (64-bit);10.96.100.62
+App-Integrate-Ecom-LC;Ubuntu Linux (64-bit);10.96.100.63
+FRT-Rebate-Service;Ubuntu Linux (64-bit);10.96.100.64
+FRT-ADS-APP;Ubuntu Linux (64-bit);10.96.100.65
+FLC-F0-Evidence-BE-1;Ubuntu Linux (64-bit);10.96.100.67
+FRT-ReturnHome-Web;Ubuntu Linux (64-bit);10.96.100.68
+FRT-ReturnHome-API;Ubuntu Linux (64-bit);10.96.100.69
+FRT-Shipment-App;Ubuntu Linux (64-bit);10.96.100.71
+FRT-Inventory;Ubuntu Linux (64-bit);10.96.100.73
+FRT-Report-UI;Ubuntu Linux (64-bit);10.96.100.75
+FRT-Report-API;Ubuntu Linux (64-bit);10.96.100.76
+FRT-MDM-SERVICE;Ubuntu Linux (64-bit);10.96.100.77
+FRT-ORDER-SERVICE;Ubuntu Linux (64-bit);10.96.100.78
+FRT-SEARCH-SERVICE;Ubuntu Linux (64-bit);10.96.100.79
+FRT-LEGACY-SERVICE;Ubuntu Linux (64-bit);10.96.100.80
+FRT-DEP-SERVICE;Ubuntu Linux (64-bit);10.96.100.81
+FRT-PAYMENT-APP;Ubuntu Linux (64-bit);10.96.100.82
+FRT-NOTI-WEB;Ubuntu Linux (64-bit);10.96.100.83
+FRT-Pharma-Inventory;Ubuntu Linux (64-bit);10.96.100.84
+FRT-MONITOR-SERVICE;Ubuntu Linux (64-bit);10.96.100.85
+FRT-PAYMENT-INTEGRATION;Ubuntu Linux (64-bit);10.96.100.86
+FRT-PAYMENT-GATEWAY;Ubuntu Linux (64-bit);10.96.100.87
+FLC-IMS-SPC-API-1;Ubuntu Linux (64-bit);10.96.100.88
+FLC-IMS-SPC-API-2;Ubuntu Linux (64-bit);10.96.100.89
+Kafka-Azure-Integration;Ubuntu Linux (64-bit);10.96.100.90
+FRT-DATA-CUSTOMER-APP;Ubuntu Linux (64-bit);10.96.100.91
+FRT-SMS-SERVICE;Ubuntu Linux (64-bit);10.96.100.92
+FRT-TRANSPORT-SERVICE;Ubuntu Linux (64-bit);10.96.100.94
+FRT-LC-DELIVERY-APP;Ubuntu Linux (64-bit);10.96.100.95
+App-OMS-2;Ubuntu Linux (64-bit);10.96.100.96
+FRT-Debit-Service-Prod;Ubuntu Linux (64-bit);10.96.100.98
+FRT-Debit-Web-Prod;Ubuntu Linux (64-bit);10.96.100.99
+FLC-PREPRO-BE-CART-APP-1;Ubuntu Linux (64-bit);10.201.156.1
+FLC-PREPRO-PCAL-1;Ubuntu Linux (64-bit);10.201.156.10
+FLC-PREPRO-PCAL-2;Ubuntu Linux (64-bit);10.201.156.11
+FLC-PREPRO-PCAL-3;Ubuntu Linux (64-bit);10.201.156.12
+FLC-PREPRO-Inventory-API-1;Ubuntu Linux (64-bit);10.201.156.13
+FLC-PREPRO-Inventory-API-2;Ubuntu Linux (64-bit);10.201.156.14
+FLC-PREPRO-Inventory-API-3;Ubuntu Linux (64-bit);10.201.156.15
+FLC-PREPRO-Inventory-API-4;Ubuntu Linux (64-bit);10.201.156.16
+FLC-PREPRO-BE-RSA-ECOM-1;Ubuntu Linux (64-bit);10.201.156.17
+FLC-PREPRO-BE-RSA-ECOM-2;Ubuntu Linux (64-bit);10.201.156.18
+FLC-PREPRO-STOREFRONT-1;Ubuntu Linux (64-bit);10.201.156.19
+FLC-PREPRO-BE-CART-APP-2;Ubuntu Linux (64-bit);10.201.156.2
+FLC-PREPRO-STOREFRONT-2;Ubuntu Linux (64-bit);10.201.156.20
+FLC-PREPRO-STOREFRONT-3;Ubuntu Linux (64-bit);10.201.156.21
+FLC-PREPRO-CMS-1;Ubuntu Linux (64-bit);10.201.156.22
+FLC-PREPRO-CMS-2;Ubuntu Linux (64-bit);10.201.156.23
+FLC-PREPROD-CUSTOMER-API-1;Ubuntu Linux (64-bit);10.201.156.24
+FLC-PREPROD-CUSTOMER-API-2;Ubuntu Linux (64-bit);10.201.156.25
+NON-BackStage;Ubuntu Linux (64-bit);10.201.156.253
+FLC-PREPROD-CUSTOMER-API-3;Ubuntu Linux (64-bit);10.201.156.26
+FLC-PREPRO-ORDER-PROMISSING-API-1;Ubuntu Linux (64-bit);10.201.156.27
+FLC-PREPRO-ORDER-PROMISSING-API-2;Ubuntu Linux (64-bit);10.201.156.28
+FLC-PREPRO-ORDER-PROMISSING-API-3;Ubuntu Linux (64-bit);10.201.156.29
+FLC-PREPRO-BE-CART-APP-3;Ubuntu Linux (64-bit);10.201.156.3
+FLC-PREPRO-eStore-1;Ubuntu Linux (64-bit);10.201.156.30
+FLC-PREPRO-eStore-2;Ubuntu Linux (64-bit);10.201.156.31
+FLC-PREPRO-eStore-3;Ubuntu Linux (64-bit);10.201.156.32
+FLC-PREPRO-RatingCore-1;Ubuntu Linux (64-bit);10.201.156.33
+FLC-PREPRO-CMS-CORE-2;Ubuntu Linux (64-bit);10.201.156.34
+FLC-PREPRO-CMS-CORE-1;Ubuntu Linux (64-bit);10.201.156.39
+FLC-PREPRO-BE-CART-APP-4;Ubuntu Linux (64-bit);10.201.156.4
+FLC-PREPRO-BE-CART-APP-7;Ubuntu Linux (64-bit);10.201.156.40
+FLC-PREPRO-BE-CART-APP-8;Ubuntu Linux (64-bit);10.201.156.41
+pos-wrapper-04;Ubuntu Linux (64-bit);10.201.156.44
+FLC-PREPRO-BE-CART-APP-5;Ubuntu Linux (64-bit);10.201.156.5
+FLC-PREPRO-BE-CART-APP-6;Ubuntu Linux (64-bit);10.201.156.6
+FLC-PREPRO-RuleEngine-1;Ubuntu Linux (64-bit);10.201.156.7
+FLC-PREPRO-RuleEngine-2;Ubuntu Linux (64-bit);10.201.156.8
+FLC-PREPRO-RuleEngine-3;Ubuntu Linux (64-bit);10.201.156.9
+PROD-NHAPTHUOC-PostgreSQL-dm29rsxu-slave2;Ubuntu Linux (64-bit);10.201.144.10
+backend;Ubuntu Linux (64-bit);10.201.144.100
+PROD-NHAPTHUOC-KONG-rbbcvd7k-slave2;Ubuntu Linux (64-bit);10.201.144.12
+NHAPTHUOC-KONGA-DB;Ubuntu Linux (64-bit);10.201.144.15
+PROD-NHAPTHUOC-MONGODB-d92h1jqn-master1;Ubuntu Linux (64-bit);10.201.144.3
+PROD-NHAPTHUOC-PostgreSQL-dm29rsxu-master1;Ubuntu Linux (64-bit);10.201.144.4
+PROD-NHAPTHUOC-KONG-rbbcvd7k-master1;Ubuntu Linux (64-bit);10.201.144.5
+PROD-NHAPTHUOC-MONGODB-d92h1jqn-slave1;Ubuntu Linux (64-bit);10.201.144.6
+PROD-NHAPTHUOC-PostgreSQL-dm29rsxu-slave1;Ubuntu Linux (64-bit);10.201.144.7
+PROD-NHAPTHUOC-KONG-rbbcvd7k-slave1;Ubuntu Linux (64-bit);10.201.144.8
+PROD-NHAPTHUOC-MONGODB-d92h1jqn-slave2;Ubuntu Linux (64-bit);10.201.144.9
+PROD-NHAPTHUOC-ZOOKEEPER-1;Ubuntu Linux (64-bit);10.201.145.1
+PROD-NHAPTHUOC-REDIS-1;Ubuntu Linux (64-bit);10.201.145.10
+PROD-NHAPTHUOC-INVENTORY-REDIS;Ubuntu Linux (64-bit);10.201.145.11
+PROD-NHAPTHUOC-RCA-REDIS;Ubuntu Linux (64-bit);10.201.145.13
+PROD-NHAPTHUOC-CMS-REDIS;Ubuntu Linux (64-bit);10.201.145.14
+PROD-NHAPTHUOC-CORE-CUSTOMER-REDIS;Ubuntu Linux (64-bit);10.201.145.15
+PROD-NHAPTHUOC-CUSTOMER-BE-REDIS;Ubuntu Linux (64-bit);10.201.145.16
+PROD-NHAPTHUOC-ESTORE-REDIS;Ubuntu Linux (64-bit);10.201.145.17
+PROD-NHAPTHUOC-LOYALTY-REDIS;Ubuntu Linux (64-bit);10.201.145.18
+PROD-NHAPTHUOC-PAYMENT-REDIS;Ubuntu Linux (64-bit);10.201.145.19
+PROD-NHAPTHUOC-ZOOKEEPER-2;Ubuntu Linux (64-bit);10.201.145.2
+PROD-NHAPTHUOC-PROMOTION-REDIS;Ubuntu Linux (64-bit);10.201.145.20
+PROD-NHAPTHUOC-RSA-REDIS;Ubuntu Linux (64-bit);10.201.145.21
+PROD-NHAPTHUOC-SSO-REDIS;Ubuntu Linux (64-bit);10.201.145.22
+PROD-NHAPTHUOC-VOUCHER-REDIS;Ubuntu Linux (64-bit);10.201.145.23
+PROD-NHAPTHUOC-PIM-API;Ubuntu Linux (64-bit);10.201.145.24
+PROD-NHAPTHUOC-ZOOKEEPER-3;Ubuntu Linux (64-bit);10.201.145.3
+PROD-NHAPTHUOC-KAFKA-1;Ubuntu Linux (64-bit);10.201.145.4
+PROD-NHAPTHUOC-KAFKA-2;Ubuntu Linux (64-bit);10.201.145.5
+PROD-NHAPTHUOC-KAFKA-3;Ubuntu Linux (64-bit);10.201.145.6
+PROD-NHAPTHUOC-RABBITMQ-1;Ubuntu Linux (64-bit);10.201.145.7
+PROD-NHAPTHUOC-RABBITMQ-2;Ubuntu Linux (64-bit);10.201.145.8
+PROD-NHAPTHUOC-RABBITMQ-3;Ubuntu Linux (64-bit);10.201.145.9
+SHIPMENT-KONGA-DB;Ubuntu Linux (64-bit);10.201.148.1
+backend;Ubuntu Linux (64-bit);10.201.148.2
+SHIPMENT-KONG-DB-06e85gir-master1;Ubuntu Linux (64-bit);10.201.148.3
+SHIPMENT-KONG-DB-06e85gir-slave1;Ubuntu Linux (64-bit);10.201.148.4
+SHIPMENT-KONG-DB-06e85gir-slave2;Ubuntu Linux (64-bit);10.201.148.5
+PROD-SHIPMENT-REDIS-1;Ubuntu Linux (64-bit);10.201.148.34
+PROD-SHIPMENT-RABBITMQ-1;Ubuntu Linux (64-bit);10.201.148.35
+PROD-SHIPMENT-RABBITMQ-2;Ubuntu Linux (64-bit);10.201.148.36
+PROD-SHIPMENT-RABBITMQ-3;Ubuntu Linux (64-bit);10.201.148.37
+ECOM-GITLAB;CentOS 7 (64-bit);10.96.120.130
+ECOM-PROXY-01;CentOS 7 (64-bit);10.96.121.226
+frtnix;CentOS 7 (64-bit);10.96.121.233
+ECOM-PROXY-02;CentOS 7 (64-bit);10.96.121.235
+DMZ-Proxy-05;CentOS 7 (64-bit);103.160.85.218
+DMZ-Proxy-POS-LC;CentOS 7 (64-bit);103.160.85.220
+FPTSHOP-PROXY;CentOS 7 (64-bit);10.201.152.1
+khlc-api-lb;CentOS 7 (64-bit);10.201.152.3
+lc-api-gw-1;CentOS 7 (64-bit);10.96.102.65
+lc-api-gw-2;CentOS 7 (64-bit);10.96.102.66
+ICT-API-GW-1;CentOS 7 (64-bit);10.96.102.67
+ICT-API-GW-2;CentOS 7 (64-bit);10.96.102.68
+ICT-API-GW-3;CentOS 7 (64-bit);10.96.102.69
+FLC-DX-API-GW-1;CentOS 7 (64-bit);10.96.102.70
+FLC-DX-API-GW-2;CentOS 7 (64-bit);10.96.102.71
+FLC-DX-API-GW-3;CentOS 7 (64-bit);10.96.102.72
+FLC-DX-API-GW-4;CentOS 7 (64-bit);10.96.102.73
+FRT-INTERNAL-GW;CentOS 7 (64-bit);10.96.102.82
+API-GW-Frtvn;CentOS 7 (64-bit);10.96.102.85
+lc-api-gw-3;CentOS 7 (64-bit);10.96.102.86
+lc-api-gw-4;CentOS 7 (64-bit);10.96.102.87
+prod-intergate-service;CentOS 7 (64-bit);10.96.101.181
+prod-xeplichkt-db;CentOS 7 (64-bit);10.96.101.5
+FRT-CC-PBX-New;Debian GNU/Linux 10 (64-bit);10.96.102.42
+DMZ-Proxy-01;CentOS 7 (64-bit);10.96.102.33
+STUN-TUYENDUNG;CentOS 7 (64-bit);10.96.102.34
+DMZ-Proxy-02;CentOS 7 (64-bit);10.96.102.36
+DMZ-Proxy-03;CentOS 7 (64-bit);10.96.102.37
+DMZ-Proxy-04;CentOS 7 (64-bit);10.96.102.39
+OpenVPN-03;CentOS 7 (64-bit);10.96.102.48
+DMZ-Proxy-POS;CentOS 7 (64-bit);10.96.102.51
+FRT-REDIS-01;CentOS 7 (64-bit);10.96.103.1
+FRT-RabbitMQ-02;CentOS 7 (64-bit);10.96.103.19
+FRT-REDIS-02;CentOS 7 (64-bit);10.96.103.2
+frt-rabbitmq-01;CentOS 7 (64-bit);10.96.103.20
+FRT-REDIS-03;CentOS 7 (64-bit);10.96.103.3
+FRT-GW-REDIS-01;CentOS 7 (64-bit);10.96.103.5
+FRT-GW-REDIS-02;CentOS 7 (64-bit);10.96.103.6
+FRT-GW-REDIS-03;CentOS 7 (64-bit);10.96.103.7
+FRT-QA-APP;CentOS 7 (64-bit);10.96.100.110
+prod-xeplichkt-service;CentOS 7 (64-bit);10.96.100.13
+frt-api-payment-gw;CentOS 7 (64-bit);10.96.100.169
+prod-identity-service;CentOS 7 (64-bit);10.96.100.179
+FRT-RabbitMQ-LB;CentOS 7 (64-bit);10.96.100.180
+FRT-INTERGATE-SERVICE;CentOS 7 (64-bit);10.96.100.181
+FRT-Identity-Service-2;CentOS 7 (64-bit);10.96.100.184
+FRT-LEGACY-SYSTEM;CentOS 7 (64-bit);10.96.100.190
+fbeauty-pos-api;CentOS 7 (64-bit);10.96.100.46
+lc-redis-2;CentOS 7 (64-bit);10.96.100.49
+lc-consolidate-api;CentOS 7 (64-bit);10.96.100.5
+lc-identity-service;CentOS 7 (64-bit);10.96.100.6
+lc-redis;CentOS 7 (64-bit);10.96.100.7
+frt-som-frontend;CentOS 7 (64-bit);10.96.100.72
+FRT-REDIS-04;CentOS 7 (64-bit);10.96.100.74
+LC-MDM-UI;CentOS 7 (64-bit);10.96.100.9
